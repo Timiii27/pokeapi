@@ -33,7 +33,7 @@ const PokemonDetailPage: React.FC = () => {
   }
 
   const handleEvolutionClick = (evolutionId: string) => {
-    router.push(`/pokemon/${evolutionId}`);
+    router.push(`/pokemon/${evolutionId}?${queryString}`);
   };
   return (
     <div className="container mx-auto p-4">
