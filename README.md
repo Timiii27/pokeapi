@@ -1,29 +1,63 @@
-# Create T3 App
+# PokeAPI App
 
-This is a [T3 Stack](https://create.t3.gg/) project bootstrapped with `create-t3-app`.
+A Next.js application to explore Pokémon using data from the PokeAPI.
 
-## What's next? How do I make an app with this?
+## Features
 
-We try to keep this project as simple as possible, so you can start with just the scaffolding we set up for you, and add additional things later when they become necessary.
+- View a list of Pokémon with filters for type, generation, and name search.
+- See detailed information about each Pokémon, including evolutions, stats, and more.
+- Navigate between Pokémon evolutions seamlessly.
+- Retain filters and search parameters when navigating back to the list.
 
-If you are not familiar with the different technologies used in this project, please refer to the respective docs. If you still are in the wind, please join our [Discord](https://t3.gg/discord) and ask for help.
+## Getting Started
 
-- [Next.js](https://nextjs.org)
-- [NextAuth.js](https://next-auth.js.org)
-- [Prisma](https://prisma.io)
-- [Drizzle](https://orm.drizzle.team)
-- [Tailwind CSS](https://tailwindcss.com)
-- [tRPC](https://trpc.io)
+Follow these steps to set up and run the project locally.
 
-## Learn More
+### 1. Clone the Repository
 
-To learn more about the [T3 Stack](https://create.t3.gg/), take a look at the following resources:
+git clone https://github.com/Timiii27/pokeapi.git
 
-- [Documentation](https://create.t3.gg/)
-- [Learn the T3 Stack](https://create.t3.gg/en/faq#what-learning-resources-are-currently-available) — Check out these awesome tutorials
+### 2. Navigate to the Project Directory
 
-You can check out the [create-t3-app GitHub repository](https://github.com/t3-oss/create-t3-app) — your feedback and contributions are welcome!
+cd pokeapi
 
-## How do I deploy this?
+### 3. Install Dependencies
 
-Follow our deployment guides for [Vercel](https://create.t3.gg/en/deployment/vercel), [Netlify](https://create.t3.gg/en/deployment/netlify) and [Docker](https://create.t3.gg/en/deployment/docker) for more information.
+pnpm install
+
+### 4. Start the Development Server
+
+pnpm run dev
+
+### 5. Open the Project in the Browser
+
+By default, the app runs at [http://localhost:3000](http://localhost:3000). Open this URL in your browser to explore the app.
+
+## Technologies Used
+
+- **Next.js**: Framework for building the application.
+- **TypeScript**: Strongly typed programming language for safer and cleaner code.
+- **Tailwind CSS**: For styling the application.
+- **PokeAPI**: Source of Pokémon data.
+
+## Project Structure
+
+- **`pages`**: Contains main application pages like the home and detail pages.
+- **`components`**: Reusable UI components like `PokemonCard` and `PokemonFilters`.
+- **`services`**: Handles API requests and data fetching.
+- **`types`**: TypeScript types for data models used throughout the application.
+
+## Scripts
+
+- **`pnpm dev`**: Starts the development server.
+- **`pnpm build`**: Builds the application for production.
+- **`pnpm start`**: Runs the production build.
+- **`pnpm lint`**: Lints the codebase.
+
+## Contributions
+
+Feel free to fork this repository and submit pull requests with new features or improvements.
+
+## License
+
+This project is open-source and available under the [MIT License](LICENSE).
